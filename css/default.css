@@ -216,9 +216,6 @@ html:lang(de) #rechts {
   display: none;
 }
 
-.topnav a.icon {
-  display: none !important;
-}
 
 .innen {
   display: none;
