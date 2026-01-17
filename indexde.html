@@ -8,72 +8,81 @@
 	<meta name="description" content="Julius Wilm: Geschichte, GIS & USA-Studien in Leipzig">
 	<meta name="author" content="Julius Wilm">
 	<link rel="icon" href="favicon_32.ico" type="image/x-icon">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	 <script>
-		function myFunction() {
-			var x = document.getElementById("myTopnav");
-			if (x.className === "topnav") {
-				x.className += " responsive";
-			} else {
-				x.className = "topnav";
-			}
-		}
-	</script> 
 	<link rel="stylesheet" type="text/css" href="css/default.css">
 </head>
 
 <body>
 
 	<div id="mama">
+    <input type="checkbox" id="mobile-menu-checkbox">
 
-		<!-- Eins -->
-		<div id="eins">
-			<!-- Anfang LOGO -->
-			<div id="name-logo">
-				<div id="first-name">Julius</div>
-				<div id="last-name">Wilm</div>
-			</div>
-			<!-- Ende Logo -->
-			<!-- Anfang rechts -->
+    <!-- Eins -->
+    <div id="eins">
+        <!-- Anfang LOGO -->
+        <div id="name-logo">
+            <div id="first-name">Julius</div>
+            <div id="last-name">Wilm</div>
+        </div>
+        <!-- Ende Logo -->
+        <!-- Anfang rechts -->
 
-			<div id="rechts">
-				<!-- Anfang rechtsoben -->
-				<div id="rechtsoben">
-					<div id="sub-title">Geschichte, GIS & USA-Studien</div>
-					<div id="language">
-						<div id="langak">DE</div>
-						<div id="langin"><a href="index.html">EN</a></div>
-					</div>
-				</div>
-				<!-- Ende rechtsoben -->
-				<!-- Navi -->
-				<div style="position: relative; z-index: 100;">
-					<div class="topnav" id="myTopnav">
-						<a href="indexde.html" class="active navipunkt">Home</a>
-						<a href="cvde.html" class="navipunkt">Lebenslauf</a>
-						<a href="booksde.html" class="navipunkt">Bücher</a>
-						<a href="talksde.html" class="navipunkt">Online-Vorträge</a>
-						<a href="projectsde.html" class="navipunkt">Projekte</a>
-						<a href="publicationsde.html" class="navipunkt">Publikationen</a>
-						<a href="datade.html" class="navipunkt">Daten</a>
-						<a href="contactde.html" class="navipunkt">Kontakt</a>
-						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-							<i class="fa fa-bars"></i>
-						</a>
-					</div>
-				</div>
-				<!-- Ende Navi -->
-			</div>
-			<!-- Ende Rechts -->
-		</div>
-		<!-- Ende Eins -->
+        <div id="rechts">
+            <!-- Anfang rechtsoben -->
+            <div id="rechtsoben">
+                <div id="sub-title">Geschichte, GIS & USA-Studien</div>
+                <div id="language">
+                    <div id="langak">DE</div> <!-- Aktive Sprache jetzt DE -->
+                    <div id="langin"><a href="index.html">EN</a></div> <!-- Inaktive Sprache jetzt EN -->
+                </div>
+            </div>
+            <!-- Ende rechtsoben -->
+
+            <!-- Navi -->
+
+            <!-- Desktop navigation menu (hidden on mobile) -->
+            <div id="nav">
+                <a href="indexde.html" class="navitemak">Home</a>
+                <a href="cvde.html" class="navitem">Lebenslauf</a>
+                <a href="booksde.html" class="navitem">Bücher</a>
+                <a href="talksde.html" class="navitem">Online-Vorträge</a>
+                <a href="projectsde.html" class="navitem">Projekte</a>
+                <a href="publicationsde.html" class="navitem">Publikationen</a>
+                <a href="datade.html" class="navitem">Daten</a>
+                <a href="contactde.html" class="navitem">Kontakt</a>
+            </div>
+            <!-- Ende Navi -->
+        </div>
+        <!-- Ende rechts -->
+    </div>
+    <!-- Ende Eins -->
+
+    <!-- Anfang Mobile menu -->
+    <div class="mobile-menu-container">
+        <!-- Hamburger button -->
+        <label for="mobile-menu-checkbox" class="menu-toggle-label">
+            <span class="hamburger-icon">☰</span>
+        </label>
+
+        <!-- Mobile navigation menu -->
+        <div id="mobile-nav">
+            <a href="indexde.html" class="mobile-navitemak">Home</a>
+            <a href="cvde.html" class="mobile-navitem">Lebenslauf</a>
+            <a href="booksde.html" class="mobile-navitem">Bücher</a>
+            <a href="talksde.html" class="mobile-navitem">Online-Vorträge</a>
+            <a href="projectsde.html" class="mobile-navitem">Projekte</a>
+            <a href="publicationsde.html" class="mobile-navitem">Publikationen</a>
+            <a href="datade.html" class="mobile-navitem">Daten</a>
+            <a href="contactde.html" class="mobile-navitem">Kontakt</a>
+        </div>
+    </div>
+    <!-- Ende Mobile Menu -->
 
 
 		<!-- Anfang Inhalt -->
 
 		<div class="content">
 			<h1>Wilkommen</h1>
-			<p><img src="images/julius.jpg" alt="Julius Wilm stehend auf der London Bridge" width="400px" height="534px" class="img-right">Ich bin
+			<p><img src="images/julius.jpg" alt="Julius Wilm stehend auf der Londoner Tower Bridge" width="400" height="534" class="img-right">Ich bin
 				Julius Wilm, Historiker mit dem Schwerpunkt der USA im 19. Jahrhunderts. Meine Forschung untersucht das
 				Zusammenwirken von demokratischer Reform, sozialem Konflikt und siedlerkolonialer Expansion. Ich
 				untersuche, wie Gesetze und Landpolitik die US-Gesellschaft formten – oft mit verheerenden menschlichen

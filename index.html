@@ -8,23 +8,13 @@
 	<meta name="description" content="Julius Wilm: History, GIS & U.S. Studies in Leipzig, Germany">
 	<meta name="author" content="Julius Wilm">
 	<link rel="icon" href="favicon_32.ico" type="image/x-icon">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script>
-		function myFunction() {
-			var x = document.getElementById("myTopnav");
-			if (x.className === "topnav") {
-				x.className += " responsive";
-			} else {
-				x.className = "topnav";
-			}
-		}
-	</script>
 	<link rel="stylesheet" type="text/css" href="css/default.css">
 </head>
 
 <body>
 
 	<div id="mama">
+		<input type="checkbox" id="mobile-menu-checkbox">
 
 		<!-- Eins -->
 		<div id="eins">
@@ -48,21 +38,17 @@
 				<!-- Ende rechtsoben -->
 
 				<!-- Navi -->
-				<div style="position: relative; z-index: 100;">
-					<div class="topnav" id="myTopnav">
-						<a href="index.html" class="active navipunkt">Home</a>
-						<a href="cv.html" class="navipunkt">CV</a>
-						<a href="books.html" class="navipunkt">Books</a>
-						<a href="talks.html" class="navipunkt">Online Talks</a>
-						<a href="projects.html" class="navipunkt">Projects</a>
-						<a href="publications.html" class="navipunkt">Publications</a>
-						<a href="data.html" class="navipunkt">Data</a>
-						<a href="contact.html" class="navipunkt">Contact</a>
 
-						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-							<i class="fa fa-bars"></i>
-						</a>
-					</div>
+				<!-- Desktop navigation menu (hidden on mobile) -->
+				<div id="nav">
+					<a href="index.html" class="navitemak">Home</a>
+					<a href="cv.html" class="navitem">CV</a>
+					<a href="books.html" class="navitem">Books</a>
+					<a href="talks.html" class="navitem">Online Talks</a>
+					<a href="projects.html" class="navitem">Projects</a>
+					<a href="publications.html" class="navitem">Publications</a>
+					<a href="data.html" class="navitem">Data</a>
+					<a href="contact.html" class="navitem">Contact</a>
 				</div>
 				<!-- Ende Navi -->
 			</div>
@@ -70,22 +56,49 @@
 		</div>
 		<!-- Ende Eins -->
 
+		<!-- Anfang Mobile menu -->
+		<div class="mobile-menu-container">
+			<!-- Hamburger button -->
+			<label for="mobile-menu-checkbox" class="menu-toggle-label">
+				<span class="hamburger-icon">☰</span>
+			</label>
+
+			<!-- Mobile navigation menu -->
+			<div id="mobile-nav">
+				<a href="index.html" class="mobile-navitemak">Home</a>
+				<a href="cv.html" class="mobile-navitem">CV</a>
+				<a href="books.html" class="mobile-navitem">Books</a>
+				<a href="talks.html" class="mobile-navitem">Online Talks</a>
+				<a href="projects.html" class="mobile-navitem">Projects</a>
+				<a href="publications.html" class="mobile-navitem">Publications</a>
+				<a href="data.html" class="mobile-navitem">Data</a>
+				<a href="contact.html" class="mobile-navitem">Contact</a>
+			</div>
+		</div>
+		<!-- Ende Mobile Menu -->
 		<!-- Anfang Inhalt -->
 
 		<div class="content">
 			<h1>Welcome</h1>
-			<p><img src="images/julius.jpg" alt="Julius Wilm standing on the London Bridge" width="400px" height="534px" class="img-right">
+			<p><img src="images/julius.jpg" alt="Julius Wilm standing on the Tower Bridge in London" width="400"
+					height="534" class="img-right">
 				I am Julius Wilm, a historian of the 19th-century United States. My research maps the nexus of
-				democratic reform, social conflict, and settler-colonial expansion, asking how laws and land policies
+				democratic reform, social conflict, and settler-colonial expansion, asking how laws and land
+				policies
 				shaped US society—often at a devastating human cost.</p>
 
-			<p>My first book, <em>Settlers as Conquerors</em>, uncovered the colonial roots of antebellum free land
-				laws. My current digital project traces the impact of the Homestead Act, using GIS to visualize the
-				effects of the law for Indigenous peoples in the West and African Americans in the Deep South. I also
-				explore the transatlantic dimensions of U.S. history and memory, including the contested legacy of
+			<p>My first book, <em>Settlers as Conquerors</em>, uncovered the colonial roots of antebellum free
+				land
+				laws. My current digital project traces the impact of the Homestead Act, using GIS to visualize
+				the
+				effects of the law for Indigenous peoples in the West and African Americans in the Deep South. I
+				also
+				explore the transatlantic dimensions of U.S. history and memory, including the contested legacy
+				of
 				German-American figures like Carl Schurz.</p>
 
-			<p>Alongside scholarly work, I engage in public history through digital atlases, media commentary, and
+			<p>Alongside scholarly work, I engage in public history through digital atlases, media commentary,
+				and
 				writing for broader audiences.</p>
 		</div>
 		<!-- Ende Inhalt -->

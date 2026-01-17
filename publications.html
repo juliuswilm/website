@@ -8,17 +8,6 @@
 	<meta name="description" content="Julius Wilm: History, GIS & U.S. Studies in Leipzig, Germany">
 	<meta name="author" content="Julius Wilm">
 	<link rel="icon" href="favicon_32.ico" type="image/x-icon">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script>
-		function myFunction() {
-			var x = document.getElementById("myTopnav");
-			if (x.className === "topnav") {
-				x.className += " responsive";
-			} else {
-				x.className = "topnav";
-			}
-		}
-	</script>
 	<link rel="stylesheet" type="text/css" href="css/default.css">
 </head>
 
@@ -26,6 +15,7 @@
 <body>
 
 	<div id="mama">
+		<input type="checkbox" id="mobile-menu-checkbox">
 
 		<!-- Eins -->
 		<div id="eins">
@@ -42,34 +32,51 @@
 				<div id="rechtsoben">
 					<div id="sub-title">History, GIS & U.S.&nbsp;Studies</div>
 					<div id="language">
-						<div id="langin"><a href="publicationsde.html">DE</a></div>
+						<div id="langin"><a href="indexde.html">DE</a></div>
 						<div id="langak">EN</div>
 					</div>
 				</div>
 				<!-- Ende rechtsoben -->
 
 				<!-- Navi -->
-				<div style="position: relative; z-index: 100;">
-					<div class="topnav" id="myTopnav">
-						<a href="index.html" class="navipunkt">Home</a>
-						<a href="cv.html" class="navipunkt">CV</a>
-						<a href="books.html" class="navipunkt">Books</a>
-						<a href="talks.html" class="navipunkt">Online Talks</a>
-						<a href="projects.html" class="navipunkt">Projects</a>
-						<a href="publications.html" class="active navipunkt">Publications</a>
-						<a href="data.html" class="navipunkt">Data</a>
-						<a href="contact.html" class="navipunkt">Contact</a>
 
-						<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-							<i class="fa fa-bars"></i>
-						</a>
-					</div>
+				<!-- Desktop navigation menu (hidden on mobile) -->
+				<div id="nav">
+					<a href="index.html" class="navitem">Home</a>
+					<a href="cv.html" class="navitem">CV</a>
+					<a href="books.html" class="navitem">Books</a>
+					<a href="talks.html" class="navitem">Online Talks</a>
+					<a href="projects.html" class="navitem">Projects</a>
+					<a href="publications.html" class="navitem">Publications</a>
+					<a href="data.html" class="navitem">Data</a>
+					<a href="contact.html" class="navitem">Contact</a>
 				</div>
 				<!-- Ende Navi -->
 			</div>
 			<!-- Ende rechts -->
 		</div>
 		<!-- Ende Eins -->
+
+		<!-- Anfang Mobile menu -->
+		<div class="mobile-menu-container">
+			<!-- Hamburger button -->
+			<label for="mobile-menu-checkbox" class="menu-toggle-label">
+				<span class="hamburger-icon">☰</span>
+			</label>
+
+			<!-- Mobile navigation menu -->
+			<div id="mobile-nav">
+				<a href="index.html" class="mobile-navitem">Home</a>
+				<a href="cv.html" class="mobile-navitem">CV</a>
+				<a href="books.html" class="mobile-navitem">Books</a>
+				<a href="talks.html" class="mobile-navitem">Online Talks</a>
+				<a href="projects.html" class="mobile-navitem">Projects</a>
+				<a href="publications.html" class="mobile-navitem">Publications</a>
+				<a href="data.html" class="mobile-navitem">Data</a>
+				<a href="contact.html" class="mobile-navitem">Contact</a>
+			</div>
+		</div>
+		<!-- Ende Mobile Menu -->
 
 		<!-- Anfang Inhalt -->
 
