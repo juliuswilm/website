@@ -4,7 +4,7 @@
     url('../fonts/catrhythmus-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+font-display: optional
 }
 
 
@@ -15,12 +15,11 @@
     url('../fonts/RobotoCondensed-Regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  font-display: swap;
+font-display: optional
 }
 
 
 * {
-  position: relative;
   margin: 0;
   padding: 0;
   font-family: 'roboto_condensedregular', Arial, sans-serif;
@@ -39,6 +38,7 @@ body {
   margin: 20px auto;
 
 }
+
 
 /* Eins */
 
@@ -94,10 +94,12 @@ body {
 /* Breite verschieden definiert für die beiden sprachen - verhindert Springen nach Link-Click */
 html:lang(en) #rechts {
   width: 720px;
+  min-width: 720px;
 }
 
 html:lang(de) #rechts {
   width: 810px;
+  min-width: 810px;
 }
 
 
@@ -165,7 +167,7 @@ html:lang(de) #rechts {
 
 /* Hover-Effekte */
 #langin:hover {
-  transform: scale(1.4);
+  _transform: scale(1.4);
   color: #FCF9F1;
   background: #2d5131;
   text-decoration: underline;
@@ -178,11 +180,12 @@ html:lang(de) #rechts {
 
 /* Navigation */
 #nav {
-    color: blue;
-    font-size: 1.0em;
     display: flex;
     justify-content: flex-end;
-    margin-top: auto;
+    _margin-top: auto;
+    position: sticky; /* Add this */
+ 
+    
 }
 
 .navitem {
@@ -205,7 +208,7 @@ html:lang(de) #rechts {
 .navitem:hover {
     background: #437848;
     box-shadow: 2px 2px 5px gray;
-    transform: scale(1.2);
+    _transform: scale(1.2);
 }
 .navitemak {
     display: inline-block;
@@ -230,6 +233,7 @@ html:lang(de) #rechts {
     text-shadow: 2px 2px 5px gray;
     text-decoration: underline;
 }
+
 
 /* ===== MOBILE NAVIGATION ===== */
 /* Hidden checkbox */
@@ -362,6 +366,7 @@ img {
   float: right;
   margin: 0 auto 20px 20px;
   max-width: 50vw;
+  height: auto;
 }
 
 .img-left {
@@ -596,12 +601,13 @@ img {
     overflow: hidden;
     transition: max-height 0.5s ease, opacity 0.3s ease;
     opacity: 0;
+    padding-top: 40px;
   }
 
   /* Show mobile nav when checkbox is checked */
   #mobile-menu-checkbox:checked ~ .mobile-menu-container #mobile-nav {
     display: flex;
-    max-height: 500px;
+    max-height: 1000px;
     opacity: 1;
   }
 
@@ -617,7 +623,7 @@ img {
 
   /* Mobile nav items */
   .mobile-navitem {
-    top: 50px;
+    top: auto;
     display: block;
     width: 80%;
     margin: 5px auto !important;
@@ -645,7 +651,7 @@ img {
   }
 
   .mobile-navitemak {
-    top: 50px;
+    top: auto;
     display: block;
     width: 80%;
     margin: 5px auto !important;
