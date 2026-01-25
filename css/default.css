@@ -25,6 +25,7 @@ font-display: optional
   font-family: 'roboto_condensedregular', Arial, sans-serif;
   font-size: 100%;
   line-height: 1.5;
+  position: relative;
 }
 
 
@@ -501,7 +502,8 @@ img {
   }
 
   /* Rechts */
-  #rechts {
+html:lang(en) #rechts,
+html:lang(de) #rechts {
     width: auto;
     margin-left: 0;
     min-width: 0;
@@ -522,7 +524,7 @@ img {
   #sub-title {
     flex-wrap: wrap;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin-bottom: 15px;
     width: 100%; /* ADDED */
     order: 1; /* ADDED: ensures it appears first */
