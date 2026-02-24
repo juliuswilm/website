@@ -226,7 +226,7 @@ html:lang(de) #rechts {
         background: #437848;
     box-shadow: 2px 2px 5px gray;
     height: 25px;
-    
+     white-space: nowrap;
 }
 
 
