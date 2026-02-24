@@ -4,7 +4,7 @@
     url('../fonts/catrhythmus-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-font-display: fallback;
+font-display: swap;
 }
 
 
@@ -15,7 +15,7 @@ font-display: fallback;
     url('../fonts/RobotoCondensed-Regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-font-display: fallback;
+font-display: swap;
 }
 
 
@@ -99,7 +99,7 @@ html:lang(en) #rechts {
 }
 
 html:lang(de) #rechts {
-  width: 810px;
+  width: 820px;
   min-width: 810px;
 }
 
@@ -179,62 +179,57 @@ html:lang(de) #rechts {
 }
 
 
-/* Navigation */
+/* Navigation Container */
 #nav {
     display: flex;
     justify-content: flex-end;
-    _margin-top: auto;
-    position: sticky; /* Add this */
- 
-    
+    position: sticky;
+    top: 0; /* Sticky usually requires a top value to work */
 }
 
-.navitem {
-    display: inline-block;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #437848;
-    background-color: #a8dfb08b;
-    font-size: 1em;
-    border-radius: 5px;
-    transition: all 0.3s ease;
-    position: relative;
-    height: 25px;
-}
-
-#nav a:hover {
-    text-decoration: underline;
-    color: #FCF9F1;
-}
-
-.navitem:hover {
-    background: #437848;
-    box-shadow: 2px 2px 5px gray;
-    _transform: scale(1.2);
-}
+/* Shared Styles for all Nav Items (Active and Inactive) */
+.navitem, 
 .navitemak {
     display: inline-block;
     padding: 10px;
     margin: 10px;
+    height: 25px;
+    line-height: 25px; /* Centers text vertically within the fixed height */
     border: 1px solid #437848;
-    font-size: 1em;
     border-radius: 5px;
+    font-size: 1em;
+    white-space: nowrap;
     transition: all 0.3s ease;
     position: relative;
-      text-decoration: underline;
-    color: #FCF9F1;
-        background: #437848;
-    box-shadow: 2px 2px 5px gray;
-    height: 25px;
-     white-space: nowrap;
+    vertical-align: middle;
+    box-sizing: content-box;
 }
 
+/* Inactive Item Specifics */
+.navitem {
+    background-color: #a8dfb08b;
+}
 
+/* Active Item Specifics */
+.navitemak {
+    background: #437848;
+    color: #FCF9F1;
+    text-decoration: underline;
+    box-shadow: 2px 2px 5px gray;
+}
 
+/* Hover States */
+.navitem:hover {
+    background: #437848;
+    box-shadow: 2px 2px 5px gray;
+}
+
+/* Link behavior inside nav */
+#nav a:hover,
 .navitem:hover a {
     color: #FCF9F1;
-    text-shadow: 2px 2px 5px gray;
     text-decoration: underline;
+    text-shadow: 2px 2px 5px gray;
 }
 
 
